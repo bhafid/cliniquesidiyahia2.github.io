@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf‑8">
+<title>Clinique Sidi Yahia 2 – Excellence médicale</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* Palette santé moderne – couleurs ajustées pour un rendu plus lumineux */
+/* Keep a single root declaration – update background color */
+:root{
+  --c-bg:#E8F4F6;          /* fond doux, neutre (nouvelle couleur) */
+  --c-primary:#1A5278;        /* bleu profond, titres */
+  --c-secondary:#5DADE2;     /* vert menthe clair, texte secondaire */
+  --c-accent:#E67E22;       /* orange doux, boutons et alertes */
+  --c-green:#27AE60;          /* vert vif, icônes d’action */
+  --c-text:#2C3E50;           /* couleur du texte principal */
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--c-bg);color:var(--c-text)}
+a{text-decoration:none;color:inherit}
+/* Layout */
+header{position:relative;overflow:hidden;min-height:70vh;background:#4032f8}
+/* Limit hero image height for better performance */
+.hero{max-height:70vh;width:100%;object-fit:cover;filter:brightness(.6);}
+.header-overlay{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-shadow:2px 2px 4px rgba(0,0,0,.5)}
+.logo{font-size:3rem;font-weight:bold;margin-bottom:.8rem}
+.nav{margin-top:1.5rem}
+.nav ul{list-style:none;display:flex;gap:2rem;font-size:1.15rem}
+/* Hero text */
+.hero h2{font-size:2.5rem;text-align:center;padding:0 1rem}
+/* Services section */
+#services{padding:4rem 2rem;background:#fff}
+.services-grid{display:grid;grid-template-columns:auto auto;gap:2rem;margin-top:2rem}
+@media(max-width:800px){.services-grid{grid-template-columns:1fr}}
+.card{background:#fdfdfd;border-radius:8px;overflow:hidden;box-shadow:0 4px 10px rgba(0,0,0,.05);transition:transform .3s}
+.card:hover{transform:scale(.98)}
+/* Constrain image sizes for better responsiveness */
+.card img{max-width:20%;height:auto;}
+.card-body{padding:1.5rem}
+.card-title{font-size:1.25rem;color:var(--c-primary);margin-bottom:.75rem}
+.card-text{font-size:.95rem;color:var(--c-secondary);line-height:1.6}
+/* Contact */
+#contact{padding:4rem 2rem;background:#f7f7f7;text-align:center}
+.contact-list{list-style:none;font-size:1rem;margin-top:1rem}
+.map{width:100%;height:250px;border:0;margin-top:1.5rem}
+footer{background:#222;color:#eee;padding:1rem 2rem;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <img src="images/hero.jpg" alt="Clinique moderne" class="hero">
+  <div class="header-overlay">
+    <div class="logo">Clinique Sidi Yahia 2</div>
+    <nav class="nav"><ul><li><a href="#services">Services</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+    <h2>Votre santé, notre priorité.</h2>
+  </div>
+</header>
+<main>
+  <section id="services">
+    <h1>Médecine de spécialité</h1>
+    <p>Découvrez nos domaines d’excellence : Maternité, Gynécologie, Chirurgie et Urologie.</p>
+    <div class="services-grid">
+      <!-- Maternity -->
+      <div class="card"><img src="images/maternity.jpg" alt="Soins prénataux"><div class="card-body"><h3 class="card-title">Maternité</h3><p>Suivi obstétrique, soins prénatals et post‑natals, accompagnement à l’accouchement.</p></div></div>
+      <!-- Gynecology -->
+      <div class="card"><img src="images/gynecology.jpg" alt="Soins gynécologiques"><div class="card-body"><h3 class="card-title">Gynéco‑chirurgie</h3><p>Dépistage, contraception, prise en charge hormonale et ménopause.</p></div></div>
+      <!-- Surgery -->
+      <div class="card"><img src="images/surgery.jpg" alt="Chirurgie générale"><div class="card-body"><h3 class="card-title">Chirurgie</h3><p>Interventions mini‑invasives, laparoscopie, soins pré‑ et post‑opératoires.</p></div></div>
+      <!-- Urology -->
+      <div class="card"><img src="images/urology.png" alt="Soins urologiques"><div class="card-body"><h3 class="card-title">Urologie</h3><p>Prostate, santé pelvienne, traitement des calculs rénaux.</p></div></div>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contactez‑nous</h2>
+    <ul class="contact-list">
+      <li><strong>Adresse :</strong> 27 chemin Ahmed KARA - Bir Mourad Rais - Alger, Algerie</li>
+      <li><strong>Téléphone :</strong> +213 770 79 46 30</li>
+      <li><strong>Email :</strong> sidiyahiaclinique2@gmail.com</li>
+    </ul>
+  </section>
+</main>
+<footer>© 2026 Clinique Sidi Yahia 2 – Tous droits réservés.</footer>
+</body>
+</html>
